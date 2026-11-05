@@ -1,0 +1,48 @@
+name: Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches: [main]      # se déclenche à chaque push sur main
+  workflow_dispatch:      # permet de le relancer à la main depuis l'onglet Actions
+
+permissions:
+  contents: read          # lire le code
+  pages: write            # publier sur Pages
+  id-token: write         # prouver à Pages que le déploiement vient de ce dépôt
+
+concurrency:
+  group: pages            # un seul déploiement à la fois
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive   # sans ça, themes/mana est vide et le site est blanc
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.169.0' # même version que ton snap local
+          extended: true
+
+      - id: pages
+        uses: actions/configure-pages@v5   # calcule l'URL réelle du site
+
+      # --baseURL écrase celui de hugo.toml : ta config reste intacte pour Netlify
+      - run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build            # ne démarre que si le build a réussi
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
