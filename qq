@@ -1,0 +1,215 @@
+.
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+│   └── posts
+│       ├── mon-premier-article.fr.md
+│       └── mon-premier-article.md
+├── data
+├── hugo.toml
+├── i18n
+├── layouts
+│   ├── _default
+│   │   └── home.html
+│   └── partials
+│       └── post-image-resolve.html
+├── netlify.toml
+├── public
+│   ├── 404.html
+│   ├── categories
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   ├── css
+│   │   ├── bundle.min.02b13456d30075fe988a6f159f849e84734a9eb6b4e46325cb891138e325f01b.css
+│   │   ├── syntax-dark.min.1f07fd37e9832c4c84c7cf2208a59a801f4706c3d9287985ddb9b72bef5dee68.css
+│   │   ├── syntax-dark.min.b01037e5609e6260b74d6fcdd6d5131e8dcbc4d46d6ef4bfbe5a60bdfc1a9f30.css
+│   │   ├── syntax-light.min.001fa7f600e6f8ad413241835f3963f379d3d1d4c41d3975232727e6f2a44ae9.css
+│   │   ├── syntax-light.min.9602bc2fcef52b4c62e05eae14b48ba428e114f116e993e504d83ed5a3aeda98.css
+│   │   └── theme.min.29a2f04a9f41258e6c40c77a2b2be43ac8a3a9805c65165860d8b8ec5c442050.css
+│   ├── en
+│   │   ├── index.html
+│   │   └── sitemap.xml
+│   ├── fr
+│   │   ├── 404.html
+│   │   ├── categories
+│   │   │   ├── index.html
+│   │   │   ├── index.xml
+│   │   │   └── page
+│   │   │       └── 1
+│   │   │           └── index.html
+│   │   ├── index.html
+│   │   ├── index.json
+│   │   ├── posts
+│   │   │   ├── index.html
+│   │   │   ├── index.xml
+│   │   │   ├── mon-premier-article
+│   │   │   │   └── index.html
+│   │   │   └── page
+│   │   │       └── 1
+│   │   │           └── index.html
+│   │   ├── sitemap.xml
+│   │   └── tags
+│   │       ├── cybersécurité
+│   │       │   ├── index.html
+│   │       │   └── index.xml
+│   │       ├── hugo
+│   │       │   ├── index.html
+│   │       │   └── index.xml
+│   │       ├── index.html
+│   │       └── index.xml
+│   ├── images
+│   │   └── mon-premier-article.png
+│   ├── index.html
+│   ├── index.json
+│   ├── js
+│   │   ├── main.min.137938305a4255a5ce0531471a42b4448c4adb05e04052a70000719c0704d082.js
+│   │   └── main.min.785d205d557c1f3c5d119ca2dc59acaa8fcf72df77805f2697e4a7fc2d117731.js
+│   ├── posts
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   ├── mon-premier-article
+│   │   │   └── index.html
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   ├── sitemap.xml
+│   └── tags
+│       ├── cybersecurity
+│       │   ├── index.html
+│       │   └── index.xml
+│       ├── hugo
+│       │   ├── index.html
+│       │   └── index.xml
+│       ├── index.html
+│       └── index.xml
+├── qq
+├── static
+│   └── images
+│       └── mon-premier-article.png
+└── themes
+    └── mana
+        ├── CONTRIBUTING.md
+        ├── LICENSE
+        ├── README.md
+        ├── archetypes
+        │   └── default.md
+        ├── assets
+        │   ├── css
+        │   │   ├── about.css
+        │   │   ├── animations.css
+        │   │   ├── archive.css
+        │   │   ├── base.css
+        │   │   ├── blockquotes.css
+        │   │   ├── code-blocks.css
+        │   │   ├── filters.css
+        │   │   ├── footer.css
+        │   │   ├── header.css
+        │   │   ├── hero.css
+        │   │   ├── language-switcher.css
+        │   │   ├── main.css
+        │   │   ├── pagination.css
+        │   │   ├── posts.css
+        │   │   ├── reading-progress.css
+        │   │   ├── responsive.css
+        │   │   ├── rtl.css
+        │   │   ├── scroll-to-top.css
+        │   │   ├── search.css
+        │   │   ├── single-post.css
+        │   │   ├── syntax-dark.css
+        │   │   ├── syntax-light.css
+        │   │   ├── tags.css
+        │   │   └── theme.css
+        │   └── js
+        │       ├── blockquotes.js
+        │       ├── code-blocks.js
+        │       ├── common
+        │       │   └── constants.js
+        │       ├── filters.js
+        │       ├── language-switcher.js
+        │       ├── navigation.js
+        │       ├── page-transitions.js
+        │       ├── reading-progress.js
+        │       ├── scroll-to-top.js
+        │       ├── search.js
+        │       ├── theme-toggle.js
+        │       ├── toc.js
+        │       └── utils.js
+        ├── config-examples
+        │   ├── example-multi-folder-multilang.toml
+        │   ├── example-multi-folder-single-lang.toml
+        │   ├── example-single-folder-multilang.toml
+        │   ├── example-single-folder-single-lang.toml
+        │   └── example.toml
+        ├── i18n
+        │   ├── en.toml
+        │   ├── fr.toml
+        │   ├── he.toml
+        │   └── ja.toml
+        ├── images
+        │   ├── README.md
+        │   ├── screenshot.png
+        │   └── tn.png
+        ├── layouts
+        │   ├── 404.html
+        │   ├── _default
+        │   │   ├── baseof.html
+        │   │   ├── home.html
+        │   │   ├── index.json
+        │   │   ├── list.html
+        │   │   └── single.html
+        │   ├── _markup
+        │   │   └── render-blockquote.html
+        │   ├── about
+        │   │   └── single.html
+        │   ├── archive
+        │   │   └── list.html
+        │   ├── archives
+        │   │   └── list.html
+        │   ├── partials
+        │   │   ├── back-to-home.html
+        │   │   ├── breadcrumb.html
+        │   │   ├── buy-me-coffee.html
+        │   │   ├── footer.html
+        │   │   ├── glass-dock.html
+        │   │   ├── head
+        │   │   │   ├── css.html
+        │   │   │   ├── favicon.html
+        │   │   │   ├── js.html
+        │   │   │   ├── json-ld.html
+        │   │   │   ├── opengraph.html
+        │   │   │   ├── robots.html
+        │   │   │   └── syntax-highlight.html
+        │   │   ├── head.html
+        │   │   ├── header.html
+        │   │   ├── language-switcher.html
+        │   │   ├── list-count.html
+        │   │   ├── menu.html
+        │   │   ├── mobile-menu.html
+        │   │   ├── pagination.html
+        │   │   ├── post-card.html
+        │   │   ├── post-image-resolve.html
+        │   │   ├── post-image-single.html
+        │   │   ├── post-image.html
+        │   │   ├── post-meta-inline.html
+        │   │   ├── post-meta.html
+        │   │   ├── post-tags-inline.html
+        │   │   ├── related-posts.html
+        │   │   ├── scroll-to-top.html
+        │   │   ├── search-modal.html
+        │   │   ├── social-links.html
+        │   │   ├── theme-toggle.html
+        │   │   └── toc.html
+        │   ├── sitemap.xml
+        │   └── taxonomy
+        │       ├── tag.html
+        │       └── tag.terms.html
+        ├── package.json
+        ├── prettierignore
+        ├── prettierrc
+        └── theme.toml
+
+57 directories, 156 files
