@@ -7,8 +7,13 @@ description: "Morris Worm, Stuxnet, Sony Pictures, WannaCry, NotPetya, SolarWind
 tags: ["cybersécurité", "histoire", "malware", "ransomware"]
 ---
 
-Certaines attaques ont changé l'histoire de la sécurité informatique, et parfois celle du monde entier. Voici **7 cyberattaques majeures**, de la première expérience devenue incontrôlable en 1988 jusqu'au blocage d'un oléoduc en 2021.
+# 💻 7 cyberattaques qui ont marqué l'histoire
 
+> Certaines attaques ont changé l'histoire de la sécurité informatique, et parfois celle du monde entier. Voici **7 cyberattaques majeures**, de la première expérience devenue incontrôlable en 1988 jusqu'au blocage d'un oléoduc en 2021.
+
+---
+
+## 📋 Panorama
 
 | | Année | Attaque | Type |
 |:-:|:-:|---|---|
@@ -22,8 +27,8 @@ Certaines attaques ont changé l'histoire de la sécurité informatique, et parf
 
 ---
 
-## 🟩 1. Morris Worm (1988) : le premier ver d'Internet
-
+## 🟩 1. Morris Worm (1988)
+### Le premier ver d'Internet
 
 En novembre 1988, **Robert Tappan Morris**, étudiant à Cornell, lance un ver expérimental sur ARPANET. À cause d'une erreur, le ver devient **incontrôlable** et infecte environ **10 % des machines connectées à Internet** (près de 6 000 ordinateurs).
 
@@ -38,8 +43,8 @@ En novembre 1988, **Robert Tappan Morris**, étudiant à Cornell, lance un ver e
 
 ---
 
-## 🟦 2. Stuxnet (2010) : la première cyber-arme
-
+## 🟦 2. Stuxnet (2010)
+### La première cyber-arme
 
 Stuxnet est une attaque développée par les **États-Unis et Israël** (opération *Olympic Games*) contre le **programme nucléaire iranien**. Ce ver extrêmement sophistiqué cible les centrifugeuses en modifiant leur vitesse de rotation via des automates **Siemens (PLC)**, tout en cachant le problème aux opérateurs.
 
@@ -54,8 +59,8 @@ Stuxnet est une attaque développée par les **États-Unis et Israël** (opérat
 
 ---
 
-## 🟪 3. Sony Pictures (2014) : quand un film déclenche un piratage
-
+## 🟪 3. Sony Pictures (2014)
+### Quand un film déclenche un piratage
 
 Piratage massif de **Sony Pictures** : données internes, e-mails et films inédits sont divulgués. L'attaque est attribuée à la **Corée du Nord**, en représailles au film satirique *The Interview*, qui se moquait de Kim Jong-un. Le **FBI** a confirmé cette attribution.
 
@@ -69,8 +74,8 @@ Piratage massif de **Sony Pictures** : données internes, e-mails et films inéd
 
 ---
 
-## 🟥 4. WannaCry (2017) : 230 000 machines en 4 jours
-
+## 🟥 4. WannaCry (2017)
+### 230 000 machines en 4 jours
 
 Ce **ransomware** mondial a infecté plus de **230 000 machines dans 150 pays en 4 jours**. Il utilisait **EternalBlue**, un exploit de la NSA volé puis publié par les *Shadow Brokers*. Il a paralysé le **NHS** (santé britannique), **Renault** et **FedEx**.
 
@@ -84,8 +89,8 @@ Ce **ransomware** mondial a infecté plus de **230 000 machines dans 150 pays en
 
 ---
 
-## 🟧 5. NotPetya (2017) : un faux ransomware, un vrai désastre
-
+## 🟧 5. NotPetya (2017)
+### Un faux ransomware, un vrai désastre
 
 Attaque russe contre l'Ukraine, déguisée en ransomware. En réalité, c'était un **wiper** destructeur : les données étaient **détruites**, pas chiffrées dans l'espoir d'être récupérées. L'attaque s'est propagée via le logiciel comptable ukrainien **M.E.Doc** et a touché des entreprises du monde entier.
 
@@ -99,8 +104,8 @@ Attaque russe contre l'Ukraine, déguisée en ransomware. En réalité, c'était
 
 ---
 
-## 🟨 6. SolarWinds (2020) : la plus grande attaque de supply chain
-
+## 🟨 6. SolarWinds (2020)
+### La plus grande attaque de supply chain
 
 Des hackers russes (**APT29 / Cozy Bear**) ont compromis le **processus de build** de SolarWinds et injecté une **backdoor** dans les mises à jour logicielles. **18 000 clients** ont reçu la mise à jour infectée.
 
@@ -114,8 +119,8 @@ Des hackers russes (**APT29 / Cozy Bear**) ont compromis le **processus de build
 
 ---
 
-## 🟪 7. Colonial Pipeline (2021) : la pénurie d'essence
-
+## 🟪 7. Colonial Pipeline (2021)
+### La pénurie d'essence
 
 Une attaque **ransomware (DarkSide)** frappe le plus grand pipeline de carburant de la côte Est américaine. Pendant **5 jours**, les stations-service de toute la côte Est manquent d'essence. L'entreprise paie **4,4 millions de dollars** de rançon. Point d'entrée : un **VPN sans authentification à deux facteurs** sur un ancien compte.
 
@@ -140,5 +145,26 @@ Une attaque **ransomware (DarkSide)** frappe le plus grand pipeline de carburant
 | 🎭 Un « ransomware » peut cacher une opération de destruction | NotPetya |
 | 🔗 La confiance envers les fournisseurs est une surface d'attaque | SolarWinds |
 | 🔐 Un seul compte sans 2FA peut bloquer un pays | Colonial Pipeline |
+
+---
+
+## 🗺️ Chronologie visuelle
+
+```
+1988 ─●─ Morris Worm          (premier ver incontrôlable)
+       │
+2010 ─●─ Stuxnet              (1ère cyber-arme, sabotage physique)
+       │
+2014 ─●─ Sony Pictures        (piratage destructeur étatique)
+       │
+2017 ─●─ WannaCry              (ransomware mondial, exploit NSA)
+      ●─ NotPetya              (wiper déguisé, attaque la + destructrice)
+       │
+2020 ─●─ SolarWinds            (supply chain, 18 000 victimes)
+       │
+2021 ─●─ Colonial Pipeline     (ransomware, pénurie nationale)
+```
+
+---
 
 *Source : module « Culture Cyber » (F-CUL-001), chapitre « Les Cyberattaques Marquantes ». Images : illustrations originales créées pour cet article.*
