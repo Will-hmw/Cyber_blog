@@ -1,0 +1,114 @@
+baseURL = 'https://example.com'
+theme = "mana"
+defaultContentLanguage = "en"
+
+[pagination]
+  pageSize = 10
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  enableIntegrity = false
+  relatedPostsCount = 3
+  author = "Will"
+  
+  # Masquer l'image cassée par défaut
+  # [params.avatar]
+  #   url = "https://example.comavatar.jpg"
+
+  [params.codeHighlight]
+    darkTheme = "catppuccin-macchiato"
+    lightTheme = "catppuccin-frappe"
+
+  [params.copyright]
+    startYear = 2026
+    owner = "Will"
+
+  [params.admonitions]
+    alertStyle = "favicon"
+
+# ==========================================
+# CONFIGURATION DES LANGUES
+# ==========================================
+
+# 1. Configuration Anglais (Par défaut)
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+  languageDirection = "ltr"
+  contentDir = "content"
+  weight = 1
+  title = "CyberSEC Notes"
+
+  [languages.en.params]
+    description = "Cybersecurity notes and technical walkthroughs."
+    heroTitleLine1 = "CYBERSEC"
+    heroTitleLine2 = "WILL'S BLOG"
+    custom404Message = "Page not found."
+    footerText = "Built with Hugo & Mana"
+
+  [[languages.en.menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[languages.en.menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 20
+  [[languages.en.menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 30
+
+# 2. Configuration Français
+[languages.fr]
+  languageCode = "fr-FR"
+  languageName = "Français"
+  languageDirection = "ltr"
+  contentDir = "content"
+  weight = 2
+  title = "CyberSEC Carnets"
+
+  [languages.fr.params]
+    description = "Notes de cybersécurité et guides techniques."
+    heroTitleLine1 = "CYBERSEC"
+    heroTitleLine2 = "LE BLOG DE WILL"
+    custom404Message = "Page introuvable."
+    footerText = "Propulsé par Hugo & Mana"
+
+  [[languages.fr.menus.main]]
+    name = "Accueil"
+    pageRef = "/"
+    weight = 10
+  [[languages.fr.menus.main]]
+    name = "Articles"
+    pageRef = "/posts"
+    weight = 20
+  [[languages.fr.menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 30
